@@ -90,3 +90,24 @@ add a new "passing<WP>" boolean in the electron and photon trees respectively. O
 flexibility to explore different workingpoints: you can simply put a cut on these variable in the egm\_tnp\_analysis package.
 
 # FWLJMET CMSSW_10_6_29 UL Instructions for `miniIso` ID
+
+## Step 1: Create new `ntuples`
+### 1.1 Update `pileupConfiguration_cff.py`  
+Use the `GoldenJSON`-based pileup calculations (stored in `/data/`) with 100 bins and (recommended) minimum bias cross section of 69.2 mb to update the Data PU in `pileupConfiguration_cff.py` and change the era arguments to include `2016APV` and `2016`--but the pileup is treated similarly for these two cases. Rename the new PU profiles as:
+  * `2016APVUL_golden_JSON`
+  * `2016UL_golden_JSON`
+  * `2017UL_golden_JSON`
+  * `2018UL_golden_JSON`  
+Can easily read out the values using `get_pileup.py -f (--file)` and paste the output into `pileupConfiguration_cff.py`.
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
