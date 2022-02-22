@@ -88,3 +88,5 @@ in [python/egmPhotonIDModules\_cff.py](python/egmPhotonIDModules_cff.py). Each n
 add a new "passing<WP>" boolean in the electron and photon trees respectively. Of course, one can also choose to simply add a variable in
 [python/egmTreesContent\_cff.py](python/egmTreesContent\_cff.py), which might be preferred for MVA variables when you want to have the
 flexibility to explore different workingpoints: you can simply put a cut on these variable in the egm\_tnp\_analysis package.
+
+# FWLJMET CMSSW_10_6_29 UL Instructions for `miniIso` ID
